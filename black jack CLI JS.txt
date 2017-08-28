@@ -1,0 +1,28 @@
+/*
+X	reuse deck of 52 lib
+
+X	1	cli ask # of players.
+F	2	shuffle deck
+3	create players 
+4	for each player deal.  recursive until end of players.  deck of 52 becomes deck of 1 less for each card drawn
+5	recursive for each player draw cards until >= 21 or limit (look up cor4rect strategy for B.J.).  recursive until end of players
+6	display AI hand hole card(s) unknown + showing card(s)
+	special case: player hand: display all (just take the deck of 52 notation)
+7	checkOutcome after each draw for >21 and = 21; if last turn, then check for highest score of players not gone over
+
+
+	// put the AI stuff here how many cards are of value such that hand + card <= 21?  what proportion when divided by # of undealt cards?
+	// how high to keep going given cards remaining?  maybe a rule of thumb
+	// put the visibledeck management stuff here
+	// put the dealtDeck management stuff here
+
+after this I could do canasta
+with a deck of 108 (including the jokers)
+would need an AI
+
+
+
+
+
+
+
