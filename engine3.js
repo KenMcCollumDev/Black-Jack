@@ -44,15 +44,18 @@ function Deck(){
 	this.make()
 	}
 
-var gameDeck = new Deck()
-console.log("hello: ", gameDeck.card_list)  // this works
+//
+//console.log("hello: ", gameDeck.card_list)  // this works
 
 //console.log(this);
 Ken = function(gameDeck){
+
+	var gameDeck = new Deck();
+	console.log("I am alive and well");
 	Mathy.randomizeArrayPositions(gameDeck.card_list);
-	console.log("gameDeck[suitCounter]", gameDeck.card_list);
+	console.log("gameDeck[suitCounter]", gameDeck.card_list);  //this works too
 	return gameDeck;
 }
 
-//Ken();
+Ken();
 
