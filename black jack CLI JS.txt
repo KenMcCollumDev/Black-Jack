@@ -2,7 +2,7 @@
 X	reuse deck of 52 lib
 
 X	1	cli ask # of players.
-F	2	shuffle deck
+S	2	shuffle deck
 3	create players 
 4	for each player deal.  recursive until end of players.  deck of 52 becomes deck of 1 less for each card drawn
 5	recursive for each player draw cards until >= 21 or limit (look up cor4rect strategy for B.J.).  recursive until end of players

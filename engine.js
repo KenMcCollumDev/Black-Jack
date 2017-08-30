@@ -1,6 +1,5 @@
 var Mathy = require ("./libMathy.js");
 
-
 //item 2.  shuffle the deck
 function Card(suit,value){
 	this.suit = suit
@@ -46,19 +45,48 @@ function Deck(){
 	}
 
 var gameDeck = new Deck()
-console.log(gameDeck)
+//console.log(gameDeck)
 
-console.log(this);
+//console.log(this);
 
 function shuffleDeck(gameDeck)
 	{
-		//can I just do a libMathy.fisherYatesSort?
+
+		console.log("flag 1 " + gameDeck);
+		this.gameDeck;
 		Mathy.randomizeArrayPositions(gameDeck);
+/*
+		for (var suitCounter = 0; suitCounter < 4; suitCounter++)
+			{
+				for (var valueCounter = 0; valueCounter < 12; valueCounter++)
+					{
+						console.log(gameDeck.suit + gameDeck.value);
+					}
+			}
+*/
+		for (var suitCounter = 0; suitCounter < 4; suitCounter++)
+			{	
+				//console.log(gameDeck[suitCounter]);
+				for (var valueCounter = 0; valueCounter < 12; valueCounter++)
+					{
+						//console.log(gameDeck[suitCounter][valueCounter]);
+					}
+			}
+
+
+
 		return gameDeck;
 	}
 //@ask joseph why is Mathy.randomizeArrayPositions(gameDeck) not a function?  It is set up in accordance with all the module stuff I pissed around with.  
 shuffleDeck(gameDeck);
-console.log(gameDeck);
+//console.log("hello " + gameDeck);
+Mathy.randomizeArrayPositions(gameDeck);
+console.log(gameDeck)
+var abc = [1,2,3,4,5,6,7,8,9,0];
+//Mathy.randomizeArrayPositions(abc);
+console.log(abc);
+// @I need a function to convert the game deck into an array.  then I can sort on it. 
+
 
 /*
 		//item 3.  create players

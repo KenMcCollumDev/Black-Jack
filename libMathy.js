@@ -48,8 +48,8 @@ var Mathy = {
     console.log(counts + counts.length);
     },	//closes function scoreStrimg   
 
-
 } // closes libMathy
+module.exports = Mathy;
 /*
 Test Cases
 
@@ -68,5 +68,18 @@ Mathy.scoreString("Television");
 Mathy.scoreString("Heather");
 Mathy.scoreString("Garfield12323");
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
